@@ -1,5 +1,4 @@
-// /api/index.js
-module.exports = (req, res) => {
+export default function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
   res.setHeader("Content-Type", "application/json");
 
@@ -23,10 +22,11 @@ module.exports = (req, res) => {
     frame: {
       version: "vNext",
       title: "Monad Greeter",
-      image: "https://placekitten.com/800/418",   // replace with your own character later
+      image: "https://placekitten.com/800/418",
       buttons: [
         { label: randomGreeting, action: { type: "post", url: `${baseUrl}/api` } }
       ]
     }
   });
-};
+}
+
