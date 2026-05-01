@@ -4,7 +4,7 @@ export default function handler(req, res) {
 
   const greetings = [
     "Hey there 👋",
-    "Good day 🌞",
+    "Goodday 🌞",
     "What’s up 😎",
     "Howdy 🤠",
     "Hello friend 🫂",
