@@ -4,7 +4,7 @@ export default function handler(req, res) {
 
   const greetings = [
     "Hey there 👋",
-    "Goodday 🌞",
+    "Good day 🌞",
     "What’s up 😎",
     "Howdy 🤠",
     "Hello friend 🫂",
@@ -21,7 +21,7 @@ export default function handler(req, res) {
   res.status(200).json({
     frame: {
       version: "vNext",
-      title: "Monad Greeter",
+      title: "Monad Greetings",
       image: "https://placekitten.com/800/418",
       buttons: [
         { label: randomGreeting, action: { type: "post", url: `${baseUrl}/api` } }
